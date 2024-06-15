@@ -6,11 +6,19 @@ export const HistoryContainer = styled.div`
   display: flex;
   flex-direction: column;
 
-  padding: 3.5rem;
+  padding: 2rem 0rem;
 
   h1 {
     color: ${(props) => props.theme.gray[100]};
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  @media (min-width: 768px) {
+    padding: 3.5rem;
+
+    h1 {
+      font-size: 1.5rem;
+    }
   }
 `
 
