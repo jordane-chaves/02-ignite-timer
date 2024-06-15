@@ -10,11 +10,15 @@ export const LayoutContainer = styled.div`
   height: calc(100dvh - 10rem);
   max-width: 74rem;
   margin: 5rem auto;
-  padding: 2.5rem;
+  padding: 1.5rem;
 
   overflow: auto;
 
   &::-webkit-scrollbar {
     display: none;
+  }
+
+  @media (min-width: 768px) {
+    padding: 2.5rem;
   }
 `
